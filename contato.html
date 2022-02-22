@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Personal Diego</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="caixa">
+            <h1 id="logo"><a href="./index.html"><img src="logo clean2.png"></h1></a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>|</li>
+                    <li><a href="about.html">About</a></li>
+                    <li>|</li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>|</li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Ex: Diego Corrêa">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
+
+            <label for="telefone">Celular (WhatsApp)</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="60" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere meu contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Celular</label>
+
+                <label for="whatsapp"><input type="radio" name="contato" value="whatsapp" id="whatsapp"
+                        checked>Whatsapp</label>
+            </fieldset>
+            <button type="button" class="enviar"><span>Enviar</span></button>
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Developed by Renan Marra | 2022 all rights reserved.</p>
+    </footer>
+</body>
+
+</html>
