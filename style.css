@@ -16,8 +16,10 @@ body {
 
 header {
   padding: 1px 0;
-  box-shadow: 10px 5px 2px var(--orange);
-  box-shadow: 5px 5px 2px var(--orange);
+  border: solid 2px var(--orange);
+  border-top-color: var(--gray);
+  border-left-color: var(--gray);
+  border-right-color: var(--gray);
 }
 
 .caixa {
@@ -53,7 +55,6 @@ nav li {
   margin: 0 0 0 15px;
   text-transform: uppercase;
   color: var(--orange);
-  font-weight: bold;
   font-size: 22px;
   text-decoration: none;
 }
@@ -61,7 +62,6 @@ nav li {
 nav a {
   text-transform: uppercase;
   color: var(--white);
-  font-weight: bold;
   font-size: 22px;
   text-decoration: none;
 }
@@ -169,19 +169,20 @@ form legend {
   color: var(--white);
   font-family: sans-serif;
 }
+
 .border-gradient {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
 }
 .border-gradient-orange {
-  border-image-source: linear-gradient(to left, #f12711, #f5af19);
+  border-image-source: linear-gradient(to left, #f1e211, var(--orange));
 }
 
 .enviar {
   width: 50%;
   padding: 12px 18px;
-  background: linear-gradient(to right, #f12711, #f5af19);
+  background: linear-gradient(to right, #f12711, var(--orange));
   color: var(--white);
   font-weight: bold;
   font-size: 18px;
@@ -200,7 +201,7 @@ form legend {
   transform: scale(1.1);
 }
 
-/* CSS sobre.html */
+/* CSS about.html */
 #coluna1 {
   width: 562px;
   height: 685px;
@@ -208,6 +209,11 @@ form legend {
   margin: 5px;
   padding: 1em;
   background-color: none;
+}
+
+#coluna1:hover {
+  transform: scale(1.1);
+  transition: 1.2s all;
 }
 
 .coluna2 {
@@ -296,6 +302,60 @@ ul {
   -moz-animation-delay: 4s;
   -o-animation-delay: 4s;
   animation-delay: 4s;
+}
+
+/*CSS planos.html */
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.planos {
+  display: block;
+}
+
+.produtos li {
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  float: left;
+}
+
+.produtos li:hover {
+  color: linear-gradient(to left, #f12711, var(--orange));
+  transform: scale(1.1);
+  transition: 1s all;
+}
+
+.produtos li:hover h2 {
+  font-size: 34px;
+  transition: 1s all;
+}
+
+.produtos h2 {
+  font-size: 30px;
+}
+
+.descricao {
+  font-size: 18px;
+}
+
+.descricao:before {
+  content: "☑ ";
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 10px 0 0;
 }
 
 /* responsividade */
